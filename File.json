@@ -1,0 +1,257 @@
+[
+  {
+    "Level 1 Category": "IT/ TELECOM",
+    "Level 2 Category": "IT HARDWARE",
+    "Spend USD": 184513823.14899698
+  },
+  {
+    "Level 1 Category": "IT/ TELECOM",
+    "Level 2 Category": "IT SERVICES",
+    "Spend USD": 176835168.99628568
+  },
+  {
+    "Level 1 Category": "IT/ TELECOM",
+    "Level 2 Category": "TELECOM SERVICES",
+    "Spend USD": 27362385.020000029
+  },
+  {
+    "Level 1 Category": "IT/ TELECOM",
+    "Level 2 Category": "IT SOFTWARE & SUPPORT",
+    "Spend USD": 16682798.950000048
+  },
+  {
+    "Level 1 Category": "IT/ TELECOM",
+    "Level 2 Category": "OTHER IT/TELECOM",
+    "Spend USD": 702905.34208059963
+  },
+  {
+    "Level 1 Category": "IT/ TELECOM",
+    "Level 2 Category": "TELECOM EQUIPMENT",
+    "Spend USD": 397208.34000000125
+  },
+  {
+    "Level 1 Category": "IT/ TELECOM",
+    "Level 2 Category": null,
+    "Spend USD": 406494289.79736334
+  },
+  {
+    "Level 1 Category": "MRO",
+    "Level 2 Category": "MRO SUPPLIES",
+    "Spend USD": 207862998.71050265
+  },
+  {
+    "Level 1 Category": "MRO",
+    "Level 2 Category": "MRO SERVICES",
+    "Spend USD": 82769862.328200877
+  },
+  {
+    "Level 1 Category": "MRO",
+    "Level 2 Category": "CHEMICALS & LUBES",
+    "Spend USD": 11143792.092499996
+  },
+  {
+    "Level 1 Category": "MRO",
+    "Level 2 Category": null,
+    "Spend USD": 301776653.13120353
+  },
+  {
+    "Level 1 Category": "CAPITAL",
+    "Level 2 Category": "ELECTRONICS AND INSTRUMENTATION",
+    "Spend USD": 221316335.60000002
+  },
+  {
+    "Level 1 Category": "CAPITAL",
+    "Level 2 Category": "CAPITAL EQUIPMENT",
+    "Spend USD": 44465338.944100022
+  },
+  {
+    "Level 1 Category": "CAPITAL",
+    "Level 2 Category": "CAPITAL SERVICES",
+    "Spend USD": 24098298.390000004
+  },
+  {
+    "Level 1 Category": "CAPITAL",
+    "Level 2 Category": "ELECTRICAL EQUIPMENT & SUPPLIERS",
+    "Spend USD": 5850529.5000000009
+  },
+  {
+    "Level 1 Category": "CAPITAL",
+    "Level 2 Category": null,
+    "Spend USD": 295730502.43410003
+  },
+  {
+    "Level 1 Category": "PROFESSIONAL SERVICES",
+    "Level 2 Category": "LEGAL SERVICES",
+    "Spend USD": 67126390.070778832
+  },
+  {
+    "Level 1 Category": "PROFESSIONAL SERVICES",
+    "Level 2 Category": "CONSULTING",
+    "Spend USD": 56591219.992171489
+  },
+  {
+    "Level 1 Category": "PROFESSIONAL SERVICES",
+    "Level 2 Category": "FINANCIAL SERVICES",
+    "Spend USD": 10383408.132076843
+  },
+  {
+    "Level 1 Category": "PROFESSIONAL SERVICES",
+    "Level 2 Category": "OTHER PROFESSIONAL SERVICES",
+    "Spend USD": 9868711.0399999954
+  },
+  {
+    "Level 1 Category": "PROFESSIONAL SERVICES",
+    "Level 2 Category": null,
+    "Spend USD": 143969729.23502713
+  },
+  {
+    "Level 1 Category": "LOGISTICS",
+    "Level 2 Category": "AIR/EXPRESS/POSTAL SERVICES",
+    "Spend USD": 37458410.605047606
+  },
+  {
+    "Level 1 Category": "LOGISTICS",
+    "Level 2 Category": "OCEAN FREIGHT",
+    "Spend USD": 9787311.5939465687
+  },
+  {
+    "Level 1 Category": "LOGISTICS",
+    "Level 2 Category": "OTHER LOGISTICS",
+    "Spend USD": 6556001.2484194655
+  },
+  {
+    "Level 1 Category": "LOGISTICS",
+    "Level 2 Category": "ROAD FREIGHT",
+    "Spend USD": 3772253.2276796382
+  },
+  {
+    "Level 1 Category": "LOGISTICS",
+    "Level 2 Category": "WAREHOUSING AND DISTRIBUTION",
+    "Spend USD": 1880508.3577819
+  },
+  {
+    "Level 1 Category": "LOGISTICS",
+    "Level 2 Category": "INTERMODAL FREIGHT",
+    "Spend USD": 1426271.6412016891
+  },
+  {
+    "Level 1 Category": "LOGISTICS",
+    "Level 2 Category": null,
+    "Spend USD": 60880756.67407687
+  },
+  {
+    "Level 1 Category": "ENERGY & UTILITIES",
+    "Level 2 Category": "ENERGY",
+    "Spend USD": 25915373.470208928
+  },
+  {
+    "Level 1 Category": "ENERGY & UTILITIES",
+    "Level 2 Category": "WASTE MANAGEMENT",
+    "Spend USD": 998932.41142857168
+  },
+  {
+    "Level 1 Category": "ENERGY & UTILITIES",
+    "Level 2 Category": null,
+    "Spend USD": 26914305.8816375
+  },
+  {
+    "Level 1 Category": "HUMAN RESOURCES",
+    "Level 2 Category": "HUMAN RESOURCES",
+    "Spend USD": 21679161.979999941
+  },
+  {
+    "Level 1 Category": "HUMAN RESOURCES",
+    "Level 2 Category": null,
+    "Spend USD": 21679161.979999941
+  },
+  {
+    "Level 1 Category": "GENERAL SERVICES & SUPPLIES",
+    "Level 2 Category": "FACILITIES AND MAINTENANCE",
+    "Spend USD": 12881697.599678053
+  },
+  {
+    "Level 1 Category": "GENERAL SERVICES & SUPPLIES",
+    "Level 2 Category": "OFFICE EQUIPMENT, SUPPLIES & SERVICES",
+    "Spend USD": 2484309.7374508
+  },
+  {
+    "Level 1 Category": "GENERAL SERVICES & SUPPLIES",
+    "Level 2 Category": "OTHER GENERAL SERVICES & SUPPLIES",
+    "Spend USD": 366332.17473289429
+  },
+  {
+    "Level 1 Category": "GENERAL SERVICES & SUPPLIES",
+    "Level 2 Category": null,
+    "Spend USD": 15732339.511861745
+  },
+  {
+    "Level 1 Category": "MARKETING",
+    "Level 2 Category": "MEDIA & ADVERTISING",
+    "Spend USD": 10794058.379999995
+  },
+  {
+    "Level 1 Category": "MARKETING",
+    "Level 2 Category": "PROMOTION",
+    "Spend USD": 2878742.65
+  },
+  {
+    "Level 1 Category": "MARKETING",
+    "Level 2 Category": null,
+    "Spend USD": 13672801.029999996
+  },
+  {
+    "Level 1 Category": "NON PROCURABLE",
+    "Level 2 Category": "GOVERNMENT SERVICES",
+    "Spend USD": 5715607.1800000034
+  },
+  {
+    "Level 1 Category": "NON PROCURABLE",
+    "Level 2 Category": "MISCELLANEOUS EXPENSES",
+    "Spend USD": 3542434.0621999819
+  },
+  {
+    "Level 1 Category": "NON PROCURABLE",
+    "Level 2 Category": "OTHER NON PROCURABLE",
+    "Spend USD": 1640337.3
+  },
+  {
+    "Level 1 Category": "NON PROCURABLE",
+    "Level 2 Category": "SALARIES/ BENEFITS/ ALLOWANCES",
+    "Spend USD": 57139.199999999939
+  },
+  {
+    "Level 1 Category": "NON PROCURABLE",
+    "Level 2 Category": null,
+    "Spend USD": 10955517.742199985
+  },
+  {
+    "Level 1 Category": "BUSINESS TRAVEL",
+    "Level 2 Category": "BUSINESS TRAVEL",
+    "Spend USD": 4699498.3800000008
+  },
+  {
+    "Level 1 Category": "BUSINESS TRAVEL",
+    "Level 2 Category": "FLEET & VEHICLES",
+    "Spend USD": 4528072.2378571453
+  },
+  {
+    "Level 1 Category": "BUSINESS TRAVEL",
+    "Level 2 Category": null,
+    "Spend USD": 9227570.617857147
+  },
+  {
+    "Level 1 Category": "IT/TELECOM",
+    "Level 2 Category": "OTHER IT/TELECOM",
+    "Spend USD": 1405810.6841612002
+  },
+  {
+    "Level 1 Category": "IT/TELECOM",
+    "Level 2 Category": null,
+    "Spend USD": 1405810.6841612002
+  },
+  {
+    "Level 1 Category": null,
+    "Level 2 Category": null,
+    "Spend USD": 1308439438.7194884
+  }
+]
