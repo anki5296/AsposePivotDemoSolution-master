@@ -25,14 +25,14 @@ namespace AsposePivotDemo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Workbook workbook = new Workbook("C:/Users/Ankita.Gopakumar/Downloads/Demo.xlsx");
+            Workbook workbook = new Workbook("C:/Users/Ankita/Downloads/Demo.xlsx");
             //workbook.Worksheets.RemoveAt("Pivot");
             Worksheet worksheet = workbook.Worksheets.Add("Pivot");
 
 
             #region removing hard coding 
             Worksheet sheet0 = workbook.Worksheets[0];
-            //Cells cells = sheet0.Cells;
+            Cells all_cells = sheet0.Cells;
 
             Cell cell = sheet0.Cells.LastCell;
             Cell cell_first = sheet0.Cells.FirstCell;
@@ -47,11 +47,17 @@ namespace AsposePivotDemo
 
             #region First calculation
 
-
             int col_first = cell_first.Column + 1;
             int row_first = cell_first.Row + 1;
 
             #endregion
+
+
+
+
+
+
+
 
             #region Calculate column character
             int dividend = col_last;
@@ -69,27 +75,45 @@ namespace AsposePivotDemo
             string sheetname = sheet0.Name;
             #endregion
             string datasource = sheetname + "!A1:" + columnName + row_last.ToString();
+
+
+
+
+
+
+
+
+
+
             //string datasource = sheetname + "!A" + row_first.ToString() + ":" + columnName + row_last.ToString();
 
             //JObject o1 = JObject.Parse(File.ReadAllText("C:/Users/Ankita.Gopakumar/Downloads/File.json"))
             //JArray spendUSD = (JArray)o1["SpendUSD"];
             //Console.WriteLine(spendUSD); 
-            using (StreamReader r = new StreamReader("C:/Users/Ankita.Gopakumar/Downloads/File.json"))
-            {
-                string json = r.ReadToEnd();
-                dynamic array = JsonConvert.DeserializeObject(json);
-                var result = new Dictionary<string, string>();
+            #region JSON
+            // using (StreamReader r = new StreamReader(@"C:\Users\Ankita\Source\Repos\AsposePivotDemoSolution-master\AsposePivotDemo\File.json"))
+            // {
+            //     string json = r.ReadToEnd();
+            //     dynamic array = JsonConvert.DeserializeObject(json);
+            //     var result = new Dictionary<string, string>();
 
-                foreach (var field in array)
-                {
-                    result.Add(field.Name, Convert.ToString(field.V));
-                }
-                foreach (var item in result)
-                {
-                    Console.WriteLine(item.Key+""+item.Value);
-                }
-            }
+            //     foreach (var field in array)
+            //     {
+            //        result.Add(field.CFDCOL, Convert.ToString(field.FieldValue.value));
+            //     }
+            //     foreach (var item in result)
+            //     {
+            //        Console.WriteLine(item.Key + "" + item.Value);
+            //    }
+            // }
 
+
+            #endregion
+            Cell cell1 = sheet0.Cells["C1"];
+
+            string value = cell1.StringValue;
+           
+       
             int iPivotIndex = worksheet.PivotTables.Add(datasource, "A1", "PivotTable");
             PivotTable pt = worksheet.PivotTables[iPivotIndex];
             pt.RowGrand = false;
@@ -99,14 +123,23 @@ namespace AsposePivotDemo
             pt.AddFieldToArea(PivotFieldType.Row, 1);
             pt.AddFieldToArea(PivotFieldType.Data, 2);
 
+            if (value == "Spend USD")
+            {
+                pt.DataFields[0].NumberFormat = "$#,##0";
+            }
+            else 
+            {
+                pt.DataFields[0].NumberFormat = "€#.##0";
+            }
             pt.PivotTableStyleType = PivotTableStyleType.PivotTableStyleDark1;
-
+            
             //workbook.Worksheets[0].IsVisible = false;
 
             Style st = workbook.CreateStyle();
             pt.FormatAll(st);
+            
 
-            workbook.Save("C:/Users/Ankita.Gopakumar/Downloads/Demo.xlsx");
+            workbook.Save("C:/Users/Ankita/Downloads/Demo.xlsx");
 
 
 
