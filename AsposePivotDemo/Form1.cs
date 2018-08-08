@@ -52,7 +52,7 @@ namespace AsposePivotDemo
 
         {
 
-            Workbook workbook = new Workbook("C:/Users/Ankita.Gopakumar/Downloads/Demo.xlsx");
+            Workbook workbook = new Workbook("C:/Users/Ankita/Downloads/Demo2.xlsx");
 
             //workbook.Worksheets.RemoveAt("Pivot");
 
@@ -248,7 +248,7 @@ namespace AsposePivotDemo
 
                 //worksheet.Cells["C1"].SetStyle(style);
 
-                pt.DataFields[0].Number = 5;
+                pt.DataFields[0].NumberFormat = @"[>=1000000]$###\,###\,##0.00;[>=100000] $###\,##0;##,##0.00";
 
             }
 
@@ -257,6 +257,7 @@ namespace AsposePivotDemo
             {
 
 
+                pt.DataFields[0].NumberFormat = @"[>=1000000]€###\.###\.##0,00;[>=100000] €###\.##0;##.##0,00";
 
                 //style.Custom = "€#.##0.00_);[Red](€#.##0.00)";
 
@@ -264,23 +265,23 @@ namespace AsposePivotDemo
 
                 //flg.NumberFormat = true;
 
-                string custom = style.Custom;
+                //string custom = style.Custom;
 
 
 
-                string cultureCustom = style.CultureCustom;
+                //string cultureCustom = style.CultureCustom;
 
-                Style newStyle = workbook.CreateStyle();
+                //Style newStyle = workbook.CreateStyle();
 
 
 
-                newStyle.CultureCustom = g;
+                //newStyle.CultureCustom = g;
 
 
 
                 //newStyle.Custom = “#,##0.000\ [$€-40C]”;
 
-                cell1.SetStyle(newStyle);
+                //cell1.SetStyle(newStyle);
 
                 //pt.DataFields[0].Number=4;
 
@@ -304,14 +305,14 @@ namespace AsposePivotDemo
 
 
 
-            workbook.Save("C:/Users/Ankita.Gopakumar/Downloads/Demo.xlsx");
+            workbook.Save("C:/Users/Ankita/Downloads/Demo2.xlsx");
 
 
-//trial
+            //trial
 
 
 
-
+           
 
 
         }
