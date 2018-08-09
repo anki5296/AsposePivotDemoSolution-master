@@ -52,7 +52,9 @@ namespace AsposePivotDemo
 
         {
 
-            Workbook workbook = new Workbook("C:/Users/Ankita/Downloads/Demo2.xlsx");
+            string file_location = "C:/Users/Ankita/Downloads/global.xlsx";
+
+            Workbook workbook = new Workbook(file_location);
 
             //workbook.Worksheets.RemoveAt("Pivot");
 
@@ -154,60 +156,19 @@ namespace AsposePivotDemo
 
 
 
+
+            #region JSON
+
             //string datasource = sheetname + "!A" + row_first.ToString() + ":" + columnName + row_last.ToString();
 
 
 
-            //JObject o1 = JObject.Parse(File.ReadAllText("C:/Users/Ankita.Gopakumar/Downloads/File.json"))
-
-            //JArray spendUSD = (JArray)o1["SpendUSD"];
-
-            //Console.WriteLine(spendUSD);
-
-            #region JSON
-
-            // using (StreamReader r = new StreamReader(@"C:\Users\Ankita\Source\Repos\AsposePivotDemoSolution-master\AsposePivotDemo\File.json"))
-
-            // {
-
-            //     string json = r.ReadToEnd();
-
-            //     dynamic array = JsonConvert.DeserializeObject(json);
-
-            //     var result = new Dictionary<string, string>();
-
-
-
-            //     foreach (var field in array)
-
-            //     {
-
-            //        result.Add(field.CFDCOL, Convert.ToString(field.FieldValue.value));
-
-            //     }
-
-            //     foreach (var item in result)
-
-            //     {
-
-            //        Console.WriteLine(item.Key + "" + item.Value);
-
-            //    }
-
-            // }
-
+            
 
 
 
 
             #endregion
-
-
-
-
-
-
-
             int iPivotIndex = worksheet.PivotTables.Add(datasource, "A1", "PivotTable");
 
             PivotTable pt = worksheet.PivotTables[iPivotIndex];
@@ -218,29 +179,23 @@ namespace AsposePivotDemo
 
             pt.IsAutoFormat = true;
 
-            pt.AddFieldToArea(PivotFieldType.Row, 0);
-
+            pt.AddFieldToArea(PivotFieldType.Column, 0);
             pt.AddFieldToArea(PivotFieldType.Row, 1);
-
             pt.AddFieldToArea(PivotFieldType.Data, 2);
+            pt.AddFieldToArea(PivotFieldType.Data, 3);
 
             #region Globalisation
 
             Cell cell1 = sheet0.Cells["C1"];
-
+            Cell cell2 = sheet0.Cells["D1"];
             Style style = sheet0.Cells["C1"].GetStyle();
 
-
-
             //string currencySymbol = System.Threading.Thread.CurrentThread.CurrentCulture.NumberFormat.CurrencySymbol.ToString();
-
-
-
             //style.Custom = "£#,##0;[Red]-£#,##0";
-
             //style.Number = 5;
 
             string value = cell1.StringValue;
+            string value1 = cell2.StringValue;
 
             if (value == "Spend USD")
 
@@ -248,43 +203,17 @@ namespace AsposePivotDemo
 
                 //worksheet.Cells["C1"].SetStyle(style);
 
-                pt.DataFields[0].NumberFormat = @"[>=1000000]$###\,###\,##0.00;[>=100000] $###\,##0;##,##0.00";
+                pt.DataFields[0].NumberFormat = @"[>999999999]$#\,###\,###\,##0.00;[>999999]$###\,###\,##0.00;$#,###";
 
             }
 
-            else
+            if (value1 == "Spend (EUR)")
 
             {
 
-                pt.DataFields[0].NumberFormat = @"[>=1000000]€###\,###\,##0.00;[>=100000] €###\,##0;##,##0.00";
+                //worksheet.Cells["C1"].SetStyle(style);
 
-                // pt.DataFields[0].NumberFormat = @"[>=1000000]€###\.###\.##0\,00;[>=100000] €###\.##0;##.##0\,00";
-
-                //style.Custom = "€#.##0.00_);[Red](€#.##0.00)";
-
-                // StyleFlag flg = new StyleFlag();
-
-                //flg.NumberFormat = true;
-
-                //string custom = style.Custom;
-
-
-
-                //string cultureCustom = style.CultureCustom;
-
-                //Style newStyle = workbook.CreateStyle();
-
-
-
-                //newStyle.CultureCustom = g;
-
-
-
-                //newStyle.Custom = “#,##0.000\ [$€-40C]”;
-
-                //cell1.SetStyle(newStyle);
-
-                //pt.DataFields[0].Number=4;
+                pt.DataFields[1].NumberFormat = @"[>999999999]€#\,###\,###\,##0.00;[>999999]€###\,###\,##0.00;€#,###";
 
             }
 
@@ -296,26 +225,9 @@ namespace AsposePivotDemo
 
             //workbook.Worksheets[0].IsVisible = false;
 
-
-
             Style st = workbook.CreateStyle();
-
             pt.FormatAll(st);
-
-
-
-
-
-            workbook.Save("C:/Users/Ankita/Downloads/Demo2.xlsx");
-
-
-            //trial
-
-
-
-           
-
-
+            workbook.Save(file_location);
         }
 
     }
