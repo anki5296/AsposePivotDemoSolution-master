@@ -35,7 +35,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(98, 67);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 38);
+            this.button1.Size = new System.Drawing.Size(109, 72);
             this.button1.TabIndex = 0;
             this.button1.Text = "Execute";
             this.button1.UseVisualStyleBackColor = true;
