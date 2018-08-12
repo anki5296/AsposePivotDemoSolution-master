@@ -60,8 +60,14 @@ namespace AsposePivotDemo
 
 
 
-            //workbook.Worksheets.RemoveAt("Pivot");
+            try
+            {
+                workbook.Worksheets.RemoveAt("Pivot");
+            }
+            catch
+            {
 
+            }
 
 
             Worksheet worksheet = workbook.Worksheets.Add("Pivot");
@@ -294,7 +300,9 @@ namespace AsposePivotDemo
 
 
 
-            pt.PivotTableStyleType = PivotTableStyleType.PivotTableStyleDark1;
+            pt.PivotTableStyleType = PivotTableStyleType.PivotTableStyleLight16;
+
+         
 
             #region Protection level
 
